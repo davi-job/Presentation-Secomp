@@ -1,0 +1,95 @@
+* {
+	margin: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+}
+
+html {
+	min-height: 100vh;
+}
+
+body {
+	font-family: sans-serif;
+
+	background-color: #3b2d4f;
+	color: #9e6bd1;
+}
+
+.clearfix {
+	clear: both;
+}
+
+/* HEADER */
+
+.main-header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+
+	z-index: 9999;
+}
+
+.header-content {
+	width: 1058px;
+
+	margin: 0 auto;
+}
+
+.main-header {
+	background-color: #191322;
+
+	padding: 20px 0;
+}
+
+.logo-section {
+	float: left;
+}
+
+.navigation {
+	float: right;
+
+	margin-top: 4px;
+}
+
+.navigation a:link,
+.navigation a:visited {
+	margin-left: 15px;
+	color: #9e6bd1;
+
+	text-decoration: none;
+
+	font-size: 18px;
+}
+
+.navigation a:active,
+.navigation a:hover {
+	margin-left: 15px;
+	color: #69478b;
+
+	text-decoration: underline;
+}
+
+/* BANNER */
+
+.banner-section {
+	height: 950px;
+
+	background-image: url(assets/banner.png);
+}
+
+.atom-img {
+	position: absolute;
+	top: 115px;
+	right: 225px;
+}
+
+.temp {
+	color: white;
+}
+
+.projects-section {
+	background-color: #3b2d4f;
+
+	height: 950px;
+}
