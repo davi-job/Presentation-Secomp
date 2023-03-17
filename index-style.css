@@ -122,6 +122,11 @@ a:hover {
 	height: 900px;
 }
 
+.projects-section a {
+	display: inline-block;
+	margin-bottom: 50px;
+}
+
 .project {
 	position: relative;
 
@@ -180,6 +185,9 @@ a:hover {
 
 	font-size: 25px;
 	text-decoration: underline;
+
+	
+	margin-bottom: 0;
 }
 
 /* ALT PROJECT SECTION */
