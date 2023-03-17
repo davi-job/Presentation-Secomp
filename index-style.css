@@ -20,11 +20,24 @@ body {
 	clear: both;
 }
 
+.clear-right {
+	clear: right;;
+}
+
+.clear-left {
+	clear: left;
+}
+
 /* HEADER */
 
 .main-header {
+	background-color: #191322;
+
+	padding: 20px 0;
+
 	position: fixed;
 	top: 0;
+
 	width: 100%;
 
 	z-index: 9999;
@@ -34,12 +47,6 @@ body {
 	width: 1058px;
 
 	margin: 0 auto;
-}
-
-.main-header {
-	background-color: #191322;
-
-	padding: 20px 0;
 }
 
 .logo-section {
@@ -52,8 +59,8 @@ body {
 	margin-top: 4px;
 }
 
-.navigation a:link,
-.navigation a:visited {
+a:link,
+a:visited {
 	margin-left: 15px;
 	color: #9e6bd1;
 
@@ -62,8 +69,8 @@ body {
 	font-size: 18px;
 }
 
-.navigation a:active,
-.navigation a:hover {
+a:active,
+a:hover {
 	margin-left: 15px;
 	color: #69478b;
 
@@ -80,16 +87,125 @@ body {
 
 .atom-img {
 	position: absolute;
-	top: 115px;
-	right: 225px;
+	top: 125px;
+	right: 200px;
+
+	/* filter:drop-shadow(5px 5px 0 #3b2d4f); */
+	filter:drop-shadow(5px 5px 0 #191322);
 }
 
-.temp {
+.about-me {
+	box-sizing: content-box;
+
+	width: 700px;
+
+	font-size: 30px;
+
 	color: white;
+
+	padding: 350px 0 0 250px;
+	text-shadow: #69478b 3px 3px;
 }
+
+.about-me strong {
+	color: #9e6bd1;
+	text-shadow: #3b2d4f 3px 3px;
+}
+
+/* PROJECT SECTION */
 
 .projects-section {
 	background-color: #3b2d4f;
 
-	height: 950px;
+	margin-top: 200px;
+
+	height: 900px;
+}
+
+.project {
+	position: relative;
+
+	margin: 50px;
+	padding: 20px 50px;
+
+	background-color: rgba(255, 255, 255, 0.025);
+}
+
+.project-img {
+	filter: blur(5px);
+
+	float: left;
+
+	border: 4px solid white;
+}
+
+.small-img {
+	position: absolute;
+	top: 95px;
+	left: 195px;
+
+	border: 2px solid white;
+}
+
+.project-title {
+	float: right;
+
+	color: #9e6bd1;
+	text-shadow: #191322 3px 3px;
+
+	font-size: 40px;
+
+	margin-bottom: 30px;
+}
+
+.project-text {
+	float: right;
+	text-align: right;
+
+	max-width: 650px;
+
+	font-size: 22px;
+
+	color: white;
+	text-shadow: #191322 3px 3px;
+
+	margin-bottom: 100px;
+}
+
+.project a {
+	display: block;
+	float: right;
+
+	margin-right: 250px;
+
+	font-size: 25px;
+	text-decoration: underline;
+}
+
+/* ALT PROJECT SECTION */
+
+.alt-project-img {
+	float: right;
+}
+
+.alt-small-img {
+	left: auto;
+	right: 195px;
+}
+
+.alt-project-title {
+	float: left;
+}
+
+.alt-project-text {
+	float: left;
+
+	text-align: left;
+}
+
+.alt-project a {
+	float: left;
+
+	margin-right: 0;
+	margin-left: 250px;
 }
